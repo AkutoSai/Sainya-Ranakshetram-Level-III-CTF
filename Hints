@@ -1,0 +1,44 @@
+Hint: 10.1.8.30
+Desc: The target is completely blind, help in collection for the id.
+
+December 17th, 8:50:27 PM
+Hint: 10.1.8.28
+Desc: Smuggle the HTTP 2.0 which is an upgraded version of HTTP 1.1. Bypass 403 to read the file from the backend server and retrieve the fag.
+
+December 17th, 8:37:01 PM
+Hint: 10.1.8.25
+Desc: Cookies are sweet, steal some admin cookies for the flag! Check the CSP is guarding it.
+
+December 17th, 8:20:19 PM
+Hint: 10.1.8.27
+Desc: Web tokens are insecure. Identify these web tokens and exploit the webserver and login into the challenge
+
+December 17th, 8:05:33 PM
+Hint: 10.1.8.29
+Desc: Special Challenges needs special Quotes Do some magic with p_55w0rd and turn the tables.
+
+December 17th, 7:51:15 PM
+Hint - 10.1.8.29
+Desc - Usernames are interesting SELECT, CONCAT, and EXTRACT flag.
+
+December 17th, 12:49:39 PM
+Hint - 10.1.8.23
+POST Requests are amazing, Always check the layout of the application for ../flags.txt
+
+December 17th, 12:48:36 PM
+Hint - 10.1.8.14
+10.1.8.14:8000 Desc - Look for some common endpoints to start the journey.
+
+December 17th, 12:47:19 PM
+Update!
+Welcome Hackers! The CTF Level3 Day 2 is live!!
+
+December 17th, 12:30:47 AM
+Hint
+Hint (profile challenge) Go Hack the IP : 10.1.8.23 Desc: Look for something that's not visible to your eyes easily! Final Hint for today: (vault challenge) Go Hack the IP: 10.1.8.29 Desc - SELECT hint and extract flag!
+
+December 17th, 12:29:17 AM
+Hint:
+Go hack 10.1.8.14 Eyes may be deceiving, Explore More with port scanning!!..
+
+December 16th, 12:56:36 PM
