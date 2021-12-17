@@ -1,0 +1,35 @@
+IP's found So far:
+--------------
+10.1.8.14 --> 
+10.1.8.15 --> out
+10.1.8.23 --> Save Details
+10.1.8.27 --> Login page -> uname: Spiderman -> dashboard
+10.1.8.28:8000/flag
+10.1.8.29 --> Secure Lock Login
+10.1.8.30 --> Collection of Data
+10.1.8.31 --> Request Time Out
+
+=======================
+IP: 10.1.8.28: Smuggle the HTTP 2.0 which is an upgraded version of HTTP 1.1. Bypass 403 to read the file from the backend server and retrieve the fag.
+---------------
+IP: 10.1.8.XX:
+---------------
+http://10.1.8.30/config/db-creds.inc
+http://10.1.8.30/?id=id&submit=submit
+
+Login: Spiderman
+Password: M4rv3l
+
+=======================
+Flags Collected
+
+Stage 0 Flag:{Y0ur_Ch4ll3nge_st4rts_h3re} 	IP: 10.1.8.14
+Stage 1 Flag:{y0ur_pr0f1l3_1s_h4ck3d} 		IP: 10.1.8.23
+Stage 2 Flag:{}					IP: 10.1.8.29
+Stage 3 Flag:{}					IP: 10.1.8.27
+Stage 4 Flag:{}					IP: 10.1.8.25
+Stage 5 Flag:{g0tt4_5muggl3_l1ke_4_pro}		IP: 10.1.8.28
+Stage 6 Flag:{fl4g_http:10.1.8.27:80}		IP: 10.1.8.30
+
+
+=======================
