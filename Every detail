@@ -1,6 +1,6 @@
 IP's found So far:
 --------------
-10.1.8.14 --> 
+10.1.8.14 --> dirbuster
 10.1.8.15 --> out
 10.1.8.23 --> Save Details
 10.1.8.27 --> Login page -> uname: Spiderman -> dashboard
@@ -10,7 +10,20 @@ IP's found So far:
 10.1.8.31 --> Request Time Out
 
 =======================
-IP: 10.1.8.28: Smuggle the HTTP 2.0 which is an upgraded version of HTTP 1.1. Bypass 403 to read the file from the backend server and retrieve the fag.
+IP: 10.1.8.28: 
+
+Smuggle the HTTP 2.0 which is an upgraded version of HTTP 1.1. Bypass 403 to read the file from the backend server and retrieve the fag.
+---------------
+IP: 10.1.8.25:
+
+csp bypass is in code itself GET /edit?status=saved endpoint
+<script nonce=bjBuY2U=>alert('Successfully Saved')</script>
+---------------
+IP: 10.1.8.14:
+
+Basically we had to do a directory bruteforce.
+So i used
+$ ffuf -u http://10.1.8.14/FUZZ -w wordlist -x http://127.0.0.1:8080 (-x flag to pass requests through burp proxy) this showed me start directory. And there was one flag.
 ---------------
 IP: 10.1.8.27:
 jwt.io: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImprdSI6Imh0dHA6Ly8xMC4xLjguMjcvLndlbGwta25vd24vandrcy5qc29uIn0.eyJ1c2VyIjoiU3BpZGVybWFuIn0.nFQms5DOcdjKJ2H5qTL02KmYEXX7XT5Y2RmrqdmsXM7bfxnNa91V7jYwepF6zuLxnP57khCYma3XIQtmyzrYNGbhJiCPcS-7FiHMKPGvnuCyk22Lp7bgUKkAz-eu1dydd0xRYvgrSFCyua8hQtw_EKMTPzFxXelJGdXaadZ0tGBC0t8tsux17a6wjx-azRRCAvTTc-O0dTq419DE4LoxGE8CXaXRugx5Oq-iDWKaHt8bD-NlNYd6SH-l7s-b6y3c0RApk_Jz3plzcVMNRfSita8-JSMcOiLglddb7xl1fNtJvLLOppYxRxIrZh3srA0cpUi87Y4bEeJB-4b1iBEWOgkh7iHM4_dZ0rXNwR0JzWISgM-gY9XNuzO9p4aTjNAjmraDSPvIfIB9jvB6qsol9Bjv1yI5d7GRi-_uu6G8GlDyW0HEv3SdbmL5Sd6MespgZrF5MDe46TyPIafVOKbtop8V9wVQVeQJEgh_RyTs3ejRBujWbIQsU6w9OdsRJNrNkPPuN6naNqkajc-6inn5FIGLyHPAm-cff05RAYH70HEkvSAOnf1P6yRTKJwhs9Sp-1A875YNueILUyqUBmzZR91CsBYLuGrauPja08YYU6Y93yVWoqA7XgIIvhCm6RmKOzKjIUSy_0NWzbYDRZ3iH1mhurOGYHwlBGIovvO6f78
@@ -18,6 +31,8 @@ jwt.io: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImprdSI6Imh0dHA6Ly8xMC4xLjguMjcvLndl
 http://10.1.8.27/.well-known/jwks.json
 {"kty":"RSA","n":"ouskALoy3FI4ZZ460lDKpaPDlRryOUY2YHpWK_Zyuz98iipgH70V1XSlvNyQmI3lrH2yjFIzFiRCiwTLwif4b1CTYE1r5S8GWExJRSuzChi3HjOL5ZF3NKJyvZ-KDQ6Afn3g98dEDIoudRnyfatr9tPu5FRcCSzEcHpj24rq9BIUePQ5KzWjVxRZi_z_8v_b3TgroQizrutfwYIjlVjnSkbKqNHeTvQiDueW0RuE-pMykUuGTqu5P-50W382uOdY5w5wGnq6fib7yNhVjDo2RwdRetXyZPp4X83QRI70VAHDFugbyCNZoBKL6DPQWJTb4BZxrOlcvG86cl8aqxKADjDnWGS0GnsqL4KE1UiCiBcPd634hyt0An4phnzYduwnMhS90TXKtffNi6j6J_0JIRQw-JBAD4EOxLVnIWMwoAKAWGxE-f6DEvklljmZ_FGNoqvcjtou1IPB8BV1Fip9MYVnv17hlwEipa4CudiM3qSRLgkaRp1gr4hiRacvcNUKxhuHhOM-8qTdWrawSKMvAZ80PS_48dhULqHVngozLKXQ1gCdIKnnhKuRedbIRHUsoDj36B4N8IA6Heg8Yz9YMQpkq4gXcjUeMWMi2JaIwys_xM8jG5tM5ORM5z6ZEgclbuC_CaLUSDL8ZvcS3GbCUbouGDjvyREfiA58D3OP1Z0","e":"AQAB","alg":"RS256","use":"sig"}
 ---------------
+IP: 10.1.8.30:
+
 http://10.1.8.30/config/db-creds.inc
 http://10.1.8.30/?id=id&submit=submit
 
